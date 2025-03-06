@@ -6,37 +6,54 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Китайские нейросети</title>
+    <!--Подключение CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
 <body>
-    <!--Шапка-->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                <a href="#">Китайские нейросети</a>
-            </div>
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                Колонка
-            </div>
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                Меню
-            </div>
-        </div>
-    </div>
 
+    <!--Шапка-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!--Название сайта-->
+        <div class="container-fluid" id="menu">
+            <a class="navbar-brand" href="#menu">
+                <h1>Китайские нейросети</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Навигационное меню-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carouselExampleAutoplaying"><h3>Слайдер</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#card"><h3>Карточка</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accordionExample"><h3>Аккардеон</h3></a>
+                    </li>
+                </ul>
+           </div>
+        </div>
+    </nav>
+
+    <!--Карусель-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <!--Картинки-->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="image/pol" class="d-block w-100" alt="...">
+                <img src="image/deepseek.jpeg" height=1000px class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="image/sav" class="d-block w-100" alt="...">
+                <img src="image/qwen.webp" height=1000px class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="image/bur" class="d-block w-100" alt="...">
+                <img src="image/hailuo.jpg" height=1000px class="d-block w-100" alt="...">
             </div>
         </div>
+        <!--Кнопки перехода на следующий/предыдущий элемент-->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Предыдущий</span>
@@ -47,8 +64,120 @@
         </button>
     </div>
 
+    <!--Карточки-->
+    <div class="row" id="card">
+        <div class="col-lg-4 col-sm-12 mb-3 mb-sm-0">
+            <div class="card">
+                <img src="image/deepseek.jpeg" height=350px class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Deepseek</h5>
+                    <p class="card-text">Deepseek R1 - нашумевшая ИИ модель от китайской компании Deepseek AI. За основу взята модель Deepseek v3, возможности которой схожи с ChatGPT. Однако благодаря открытому исходному коду китайской нейросети у нее есть ряд интересных преимуществ.</p>
+                    <a href="https://chat.deepseek.com/" class="btn btn-primary">Попробовать Deepseek</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="card">
+                <img src="image/qwen.webp" height=350px class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Qwen 2.5</h5>
+                    <p class="card-text">Китайская компания Alibaba выпустила новую версию своей модели искусственного интеллекта Qwen 2.5-Max, которая, по словам представителей компании, превзошла высоко оцененную модель DeepSeek-V3. Изначально это не только многофункциональный чат-бот, но и генератор фото и видео.</p>
+                    <a href="https://chat.qwenlm.ai/auth" class="btn btn-primary">Попробовать Qwen 2.5</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="card">
+                <img src="image/hailuo.jpg" height=350px class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hailuo AI</h5>
+                    <p class="card-text">Hailuo AI — модель для генерации видео от китайской компании MiniMax. Нейросеть стала популярна благодаря простому интерфейсу и большому количеству бесплатных попыток. Видео выглядят динамично, в них нет эффекта замедленной съемки, как у многих других сервисов.</p>
+                    <a href="https://hailuoai.video/" class="btn btn-primary">Попробовать Hailuo AI</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!--Аккордеон-->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Deepseek
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Deepseek.</strong> Deepseek R1 - нашумевшая ИИ модель от китайской компании Deepseek AI. За основу взята модель Deepseek v3, возможности которой схожи с ChatGPT. Однако благодаря открытому исходному коду китайской нейросети у нее есть ряд интересных преимуществ.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Qwen 2.5
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Qwen 2.5.</strong> Китайская технологическая компания Alibaba выпустила новую версию своей модели искусственного интеллекта Qwen 2.5-Max, которая, по словам представителей компании, превзошла высоко оцененную модель DeepSeek-V3. Изначально это не только многофункциональный чат-бот, но и генератор фото и видео.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Hailuo AI
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Hailuo AI.</strong> Hailuo AI — модель для генерации видео от китайской компании MiniMax. Нейросеть стала популярна благодаря простому интерфейсу и большому количеству бесплатных попыток. Видео выглядят динамично, в них нет эффекта замедленной съемки, как у многих других сервисов.
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Футер -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Контактная информация -->
+                <div class="col-md-6 mb-3">
+                    <h5>Контактная информация</h5>
+                    <ul class="list-unstyled">
+                        <li>Адрес: 220001 пр-т Независимости 88, г Минск, РБ</li>
+                        <li>Телефон: +375 29 1234567</li>
+                        <li>Email: info@example.com</li>
+                    </ul>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="col-md-6 mb-3">
+                    <h5>Мы в социальных сетях</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="https://www.facebook.com/" class="text-light">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://x.com/" class="text-light">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="text-light">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Подключение JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
